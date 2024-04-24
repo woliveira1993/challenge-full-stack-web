@@ -5,7 +5,7 @@ const middleware = require("../middleware/index")
 
 router.get('/', middleware, studentsController.list);
 
-router.post('/:idStudent', middleware, studentsController.add);
+router.post('/', middleware, studentsController.add);
 
 router.put('/:idStudent', middleware, studentsController.edit);
 
