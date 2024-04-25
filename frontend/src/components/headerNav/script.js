@@ -2,7 +2,9 @@
 export default {
   name: 'headerNav',
 
-  data() {},
+  data() {
+    return {};
+  },
   
   methods: {
     logOut() {
