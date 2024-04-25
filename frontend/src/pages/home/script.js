@@ -6,18 +6,18 @@ export default {
   components: {
     HeaderNav
   },
+  
   data() {
-    return {
-    };
+    return { };
   },
-  async mounted() {
-    // await this.fetchData();
-  },
- 
+
   methods: {
+
     logOut() {
+
       this.$store.dispatch('logout');
       this.$router.push({ name: 'Login' });
+
     },
   
   },
