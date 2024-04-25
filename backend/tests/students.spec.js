@@ -42,7 +42,7 @@ describe('Students Controller', () => {
 
       await studentsController.list(req, res);
 
-      expect(res.status).toHaveBeenCalledWith(500);
+      expect(res.status).toHaveBeenCalledWith(400);
       expect(res.json).toHaveBeenCalledWith({ error: errorMessage });
     });
   });
@@ -79,20 +79,20 @@ describe('Students Controller', () => {
 
       await studentsController.add(req, res);
 
-      expect(res.status).toHaveBeenCalledWith(500);
+      expect(res.status).toHaveBeenCalledWith(400);
       expect(res.json).toHaveBeenCalledWith({ error: errorMessage });
     });
   });
 
   describe('edit', () => {
     it('deve editar um aluno existente', async () => {
-      const req = { params: { idStudent: 1 }, body: { name: 'Washington Oliveira', email: 'washingtonoliver@email.com' } };
+      const req = { params: { idStudent: 1 }, body: { name: 'Washington Oliveira', email: 'washington.oliver@email.com' } };
       const res = {
         status: jest.fn().mockReturnThis(),
         json: jest.fn(),
       };
 
-      const successMessage = 'Aluno editado com sucesso.';
+      const successMessage = 'Aluno alterado com sucesso.';
 
       StudentModel.editStudent.mockResolvedValueOnce({ msg: successMessage });
 
@@ -114,7 +114,7 @@ describe('Students Controller', () => {
 
       await studentsController.edit(req, res);
 
-      expect(res.status).toHaveBeenCalledWith(500);
+      expect(res.status).toHaveBeenCalledWith(400);
       expect(res.json).toHaveBeenCalledWith({ error: errorMessage });
     });
   });
@@ -149,7 +149,7 @@ describe('Students Controller', () => {
 
       await studentsController.delete(req, res);
 
-      expect(res.status).toHaveBeenCalledWith(500);
+      expect(res.status).toHaveBeenCalledWith(400);
       expect(res.json).toHaveBeenCalledWith({ error: errorMessage });
     });
   });
