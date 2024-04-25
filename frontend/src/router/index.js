@@ -36,20 +36,33 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+
   if (to.matched.some(record => record.meta.requiresGuest)) {
+
     if (!store.getters.isAuthenticated) {
+
       next();
+
     } else {
-      next({ name: 'Home' }); 
+
+      next({ name: 'Home' });
+
     }
   } else if (to.matched.some(record => record.meta.requiresAuth)) {
+
     if (store.getters.isAuthenticated) {
-      next(); 
+
+      next();
+
     } else {
+
       next({ name: 'Login' });
     }
+
   } else {
-    next(); 
+
+    next();
+    
   }
 });
 

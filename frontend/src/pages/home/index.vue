@@ -10,10 +10,9 @@
               <v-toolbar-title>Selecione um modulo para continuar.</v-toolbar-title>
             </v-col>
 
-            <v-col md="2">
-              <v-card class="mx-auto" color="grey" max-width="344"
-                subtitle="cadastrar e visualizar todos os alunos">
-                
+            <v-col md="3">
+              <v-card class="mx-auto" color="grey" max-width="344" subtitle="cadastrar e visualizar todos os alunos">
+
                 <template v-slot:title>
                   <v-icon>mdi-account-group</v-icon> Cadastro de Alunos
                 </template>

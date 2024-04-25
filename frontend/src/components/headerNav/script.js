@@ -1,16 +1,14 @@
 
 export default {
-    name: 'headerNav',
+  name: 'headerNav',
+
+  data() {},
   
-    data() {
-      return {
-      };
+  methods: {
+    logOut() {
+      this.$store.dispatch('logout');
+      this.$router.push({ name: 'Login' });
     },
-    methods: {
-      logOut() {
-        this.$store.dispatch('logout');
-        this.$router.push({ name: 'Login' });
-      },
-    
-    },
-  };
+
+  },
+};
