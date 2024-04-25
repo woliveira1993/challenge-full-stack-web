@@ -4,7 +4,7 @@ exports.getAllStudents = async (pageSize, offset) => {
 
     try {
 
-        const studentsQuery = await pg.query(`SELECT * FROM tb_students LIMIT $1 OFFSET $2`, [pageSize, offset])
+        const studentsQuery = await pg.query(`SELECT * FROM tb_students ORDER BY 1 DESC LIMIT $1 OFFSET $2 `, [pageSize, offset])
 
         const totalQuery = await pg.query(`SELECT COUNT(*) FROM tb_students`);
     
@@ -16,8 +16,7 @@ exports.getAllStudents = async (pageSize, offset) => {
 
     } catch (err) {
 
-        throw err;
-       
+        throw new Error("Ocorreu um erro interno para listar os alunos, entre em contato com nosso suporte.")
     
     }
  
