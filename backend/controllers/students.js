@@ -20,7 +20,7 @@ exports.list = async (req, res) => {
 
     } catch (err) {
 
-        res.status(500).json({ error: err.message });
+        res.status(400).json({ error: err.message });
 
     }
 };
@@ -36,7 +36,7 @@ exports.add = async (req, res) => {
 
     } catch (err) {
 
-        res.status(500).json({ error: err.message });
+        res.status(400).json({ error: err.message });
     }
 };
 
@@ -52,7 +52,7 @@ exports.edit = async (req, res) => {
 
     } catch (err) {
 
-        res.status(500).json({ error: err.message });
+        res.status(400).json({ error: err.message });
 
     }
 };
@@ -67,7 +67,7 @@ exports.delete = async (req, res) => {
 
     } catch (err) {
 
-        res.status(500).json({ error: err.message });
+        res.status(400).json({ error: err.message });
 
     }
 };
