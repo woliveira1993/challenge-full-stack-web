@@ -36,6 +36,10 @@ Como todo grande parte dos projetos, é sempre visado a expanção e melhorias p
 
 - Melhorias no banco de dados, como revisar e refinar o esquema do banco de dados para garantir uma modelagem eficiente dos dados, criação de índices adequados, ajuste de consultas.
 
+- Realizar integrações, para quando houvesse grande quantidade de dados e regras de negócio, para cadastro no sistema, automatizando um trabalho que nao seria produtivo se feito manualmente.
+
+- Melhorar os retornos de erro saindo do basico e retornando instruções ainda mais precisas para o usuario final.
+
 ## Executar o projeto
 
 1 - Instalar as dependencias do projeto.
@@ -52,11 +56,11 @@ npm test tests/students.spec.js
 
 **Se encontra no diretorio:** `database/db_application.sql`
 
-4 - Configurar variavies de ambiente usando o arquivo .env_example como base.
+4 - Configurar variaveis de ambiente usando o arquivo .env_example como base.
 
 **Se encontra no diretorio:** `backend/.env_example`
 
-3 - Iniciar servidor
+5 - Iniciar servidor
 ```bash
 npm start
 ```

@@ -63,3 +63,10 @@ npm run dev
 ```
 
 rodando em http://localhost:3000
+
+
+3- Fazer o login no portal
+
+E-mail: **admin@online.com**
+
+Senha: **123456**
