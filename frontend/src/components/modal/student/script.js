@@ -19,18 +19,18 @@ export default {
 
             if (operation == "add") {
 
-                this.headTitle = "Adicionar Usuario";
+                this.headTitle = "Adicionar Aluno";
 
             } else if (operation == "edit") {
 
-                this.headTitle = "Editar Usuario";
+                this.headTitle = "Editar Aluno";
                 this.student = { ...item };
                 this.cpfFieldDisabled = true;
                 this.raFieldDisabled = true;
 
             } else if (operation == "delete") {
 
-                this.headTitle = "Deletar Usuario?";
+                this.headTitle = "Deletar Aluno?";
                 this.student = { ...item };
                 this.emailFieldDisabled = true;
                 this.nameFieldDisabled = true;
