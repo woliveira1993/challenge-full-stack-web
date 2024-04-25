@@ -1,6 +1,6 @@
 const authModel = require('../models/auth');
 
-exports.auth = async (req, res) => {
+exports.authenticateUser = async (req, res) => {
 
     const { email, password } = req.body;
 

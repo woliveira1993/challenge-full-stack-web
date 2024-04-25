@@ -85,7 +85,7 @@ exports.editStudent = async (idStudent, name, email) => {
 
         if (!idExists) {
 
-            throw new Error("Foi encontrado um aluno com o RA informado, verifique e tente novamente.");
+            throw new Error("Não foi encontrado nenhum aluno com o ID informado, verifique e tente novamente.");
 
         }
 
@@ -108,7 +108,7 @@ exports.deleteStudent = async (idStudent) => {
 
         if (!idExists) {
 
-            throw new Error("Foi encontrado um aluno com o RA informado, verifique e tente novamente.");
+            throw new Error("Não foi encontrado nenhum aluno com o ID informado, verifique e tente novamente.");
 
         }
 
