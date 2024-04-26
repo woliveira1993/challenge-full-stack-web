@@ -42,7 +42,6 @@ const actions = {
             commit('AUTH_ERROR');
             commit('TOAST_ERROR', error.response.data.error);
             localStorage.removeItem('token');
-            throw error;
         }
     },
     async logout({ commit }) {
