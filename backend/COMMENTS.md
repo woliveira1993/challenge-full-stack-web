@@ -40,6 +40,10 @@ Como todo grande parte dos projetos, é sempre visado a expanção e melhorias p
 
 - Melhorar os retornos de erro saindo do basico e retornando instruções ainda mais precisas para o usuario final.
 
+## Testes Unitários
+
+Durante o projeto foi sempre realizado testes unitários para verificar a integridade e a qualidade das funções criadas, evitando erros futuros inesperados, que podem causar um mal desempenho.
+
 ## Executar o projeto
 
 1 - Instalar as dependencias do projeto.
